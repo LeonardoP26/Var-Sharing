@@ -1,0 +1,200 @@
+.trip-box {
+    /* border-top: 4px solid #5ea4f3; */
+    display: block;
+    border-top: 5px solid lightgreen;
+    background-color: #fff;
+    margin: 40px auto 40px auto;
+    max-width: 1408px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 8px 0px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.cancelled {
+    border-top: 5px solid black !important;
+}
+
+.completed {
+    border-top: 5px solid blue !important;
+}
+
+.started {
+    border-top: 5px solid orange !important;
+}
+
+.non-bookable {
+    border-top: 5px solid red !important;
+}
+
+.border-booked{
+    border-top: 5px solid lightskyblue !important;
+}
+
+
+.ph-item {
+    display: inline !important;
+}
+
+.ph-row>div {
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.ph-row>.ph-col-12.big {
+    margin-top: 40px;
+    padding-top: 35px;
+    margin-bottom: -10px;
+}
+
+
+.ph-row>div:first-child {
+    padding-top: 25px;
+}
+
+
+/* FILTERS */
+
+
+#filters {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto 60px auto auto 60px auto;
+    margin-left: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    place-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1pt 4pt, rgba(0, 0, 0, 0.08) 0px 2pt 8pt;
+    padding: 35px 0px 35px 8px;
+    border-radius: 16px;
+    height: 56px;
+    position: relative;
+    z-index: 10;
+    margin-right: auto;
+    max-width: 1408px;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+#filters.account{
+    grid-template-columns: auto auto auto auto auto auto 60px 90px auto 60px 90px auto auto;
+}
+
+.css-l4u8b9-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before {
+    border-bottom: none !important;
+}
+
+
+
+.css-l4u8b9-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: none !important;
+}
+
+.css-l4u8b9-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: none !important;
+}
+
+.css-6ffsbr-MuiAutocomplete-root {
+    margin: 0 20px 0 25px !important;
+}
+
+.filter-div {
+    margin: 0px;
+    width: 1px;
+    height: 40px;
+    border: none;
+    background-color: rgb(131, 131, 131);
+}
+
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: none !important;
+}
+
+
+.filter-text{
+    text-transform: capitalize;
+    text-align: center;
+    display: relative;
+    padding-top: 13px;
+    line-height: 1.3;
+    padding-left: 5px;
+}
+
+.trip-box1{
+    text-align: center;
+}
+.trip-box1 .trip-places{
+    text-align:start;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .trip-box1 button{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+    #filters {
+        display: flex;  
+        flex-wrap: wrap;  
+        box-sizing: border-box;
+        height: 100%;
+        justify-content: space-evenly;
+        padding: 20px 0 20px 0;
+    }
+
+
+        
+    #filters.account {
+        display: flex;  
+        flex-wrap: wrap;  
+        align-items: center;
+    }
+
+
+    .filter-dates{
+        width: 50% !important;
+    }
+
+    .filter-dates2{
+        width: 50% !important;
+        padding-left: 0 !important;
+    }
+    .filter-div{
+        display: none;
+    }
+
+    .MuiSwitch-root.MuiSwitch-sizeMedium.col-lg-1.css-m211fl-MuiSwitch-root{
+        margin: 0;
+    }
+
+    #filters > span.MuiSwitch-root.MuiSwitch-sizeMedium.col-lg-1.css-ozztwt-MuiSwitch-root{
+        margin: 0; 
+    }
+
+    #filters > .col-lg-1.filter-text{
+        margin-left: -20px;   
+    }
+
+
+
+
+
+}

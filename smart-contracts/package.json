@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.1.7",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.17.0",
+    "truffle": "^5.7.8"
+  }
+}

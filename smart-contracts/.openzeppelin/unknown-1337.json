@@ -1,0 +1,147 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x3A011dA438090A4257ebe55B54F6285F2F74eA10",
+    "txHash": "0xa058122c0a84f4df4576dd4614f7afb2a92cdcab8cf556c5472c123b07c2214a"
+  },
+  "proxies": [
+    {
+      "address": "0x9A7cA1ff808F371d6FdE4E3AFeD30f4BCaD6B206",
+      "txHash": "0xe8042198f330ca33b3e8ce2c4664a81457373f2ff240f94dd9cb145e17655194",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "9b4939e1d228131f0ba6cae2992ddef2c1648aac44711006728a1d0c660bf398": {
+      "address": "0x8198AC5287F26a961D0e0DB2B94a69Ef5B3B8431",
+      "txHash": "0xf5d8fd0c52792d2f482cebd18fa405c001fce3d7b0970e803113f9f0e439fea2",
+      "layout": {
+        "solcVersion": "0.8.13",
+        "storage": [
+          {
+            "contract": "VarSharingV2",
+            "label": "trips",
+            "type": "t_array(t_struct(Trip)1509_storage)dyn_storage",
+            "src": "..\\project:\\contracts\\VarSharingV2.sol:39"
+          },
+          {
+            "contract": "VarSharingV2",
+            "label": "passMultiArray",
+            "type": "t_array(t_array(t_uint256)dyn_storage)dyn_storage",
+            "src": "..\\project:\\contracts\\VarSharingV2.sol:40"
+          },
+          {
+            "contract": "VarSharingV2",
+            "label": "passPerTrip",
+            "type": "t_mapping(t_uint256,t_array(t_address)dyn_storage)",
+            "src": "..\\project:\\contracts\\VarSharingV2.sol:42"
+          },
+          {
+            "contract": "VarSharingV2",
+            "label": "tripPerPass",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "src": "..\\project:\\contracts\\VarSharingV2.sol:44"
+          },
+          {
+            "contract": "VarSharingV2",
+            "label": "ownerTripCount",
+            "type": "t_mapping(t_address,t_uint32)",
+            "src": "..\\project:\\contracts\\VarSharingV2.sol:46"
+          },
+          {
+            "contract": "VarSharingV2",
+            "label": "departedPassengers",
+            "type": "t_mapping(t_uint256,t_array(t_address)dyn_storage)",
+            "src": "..\\project:\\contracts\\VarSharingV2.sol:48"
+          },
+          {
+            "contract": "VarSharingV2",
+            "label": "confirmedPassengers",
+            "type": "t_mapping(t_uint256,t_array(t_address)dyn_storage)",
+            "src": "..\\project:\\contracts\\VarSharingV2.sol:50"
+          }
+        ],
+        "types": {
+          "t_array(t_struct(Trip)1509_storage)dyn_storage": {
+            "label": "struct VarSharingV2.Trip[]"
+          },
+          "t_struct(Trip)1509_storage": {
+            "label": "struct VarSharingV2.Trip",
+            "members": [
+              {
+                "label": "start",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "arrival",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "owner",
+                "type": "t_address"
+              },
+              {
+                "label": "date",
+                "type": "t_uint32"
+              },
+              {
+                "label": "maxPass",
+                "type": "t_uint256"
+              },
+              {
+                "label": "started",
+                "type": "t_uint256"
+              },
+              {
+                "label": "completed",
+                "type": "t_uint256"
+              },
+              {
+                "label": "cancelled",
+                "type": "t_uint256"
+              },
+              {
+                "label": "availability",
+                "type": "t_uint256"
+              },
+              {
+                "label": "id",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint32": {
+            "label": "uint32"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_array(t_uint256)dyn_storage)dyn_storage": {
+            "label": "uint256[][]"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_mapping(t_uint256,t_array(t_address)dyn_storage)": {
+            "label": "mapping(uint256 => address[])"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])"
+          },
+          "t_mapping(t_address,t_uint32)": {
+            "label": "mapping(address => uint32)"
+          }
+        }
+      }
+    }
+  }
+}

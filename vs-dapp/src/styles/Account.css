@@ -1,0 +1,67 @@
+.acc-content {
+    margin: 130px auto auto 240px;
+}
+
+.content-box {
+    background-color: #fff;
+    margin: 160px 40px 40px 40px;
+    max-width: auto;
+    padding: 40px 35px 20px 35px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .075);
+    border-radius: 10px;
+}
+
+.create-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
+    max-width: 900px;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .acc-content {
+        position: relative;
+        top: 220px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .content-box {
+        background-color: #fff;
+        margin: 160px 0px 40px 0px;
+        max-width: auto;
+        padding: 40px 12px 20px 12px;
+    }
+
+
+    .create-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        max-width: 900px;
+    }
+
+    .modal-dialog {
+        position:absolute;
+        margin: auto;
+        height: auto;
+        top: 25%; 
+        bottom: 0; 
+        left: 0; 
+        right: 0;
+    }
+
+
+}
